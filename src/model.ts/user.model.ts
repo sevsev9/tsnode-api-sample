@@ -28,7 +28,7 @@ UserSchema.methods.comparePassword = function (password: string): Promise<boolea
     return bcrypt.compare(password, user.password).catch((err) => false);
 }
 
-UserSchema.pre("save", async function (next: mongoose.HookNextFunction) {
+UserSchema.pre("save", async function (next) {
     const user = this as UserDocument;
     if (!user.isModified("password")) {
         return next();
