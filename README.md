@@ -5,3 +5,7 @@ This is a project that was written after [this post](https://tomanagle.medium.co
 ## Configs
 The sampe.env is a .env file template to be configured individually after cloning.
 It is to be noted that this file is only used by the api itself and not the docker files.
+
+### RSA
+The RSA keys are recommended to be written into their respective private.key / public.key files.
+I have generated them for test purposes on [this page](https://travistidwell.com/jsencrypt/demo/)
