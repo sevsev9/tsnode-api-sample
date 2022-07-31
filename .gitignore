@@ -9,6 +9,14 @@ lerna-debug.log*
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
+# MongoDB Data Files
+data/db/*.wt
+data/db/*.dbshell
+data/db/*.lock
+data/db/*.turtle
+data/db/*.bson
+data/db/*WiredTiger
+
 # Runtime data
 pids
 *.pid
