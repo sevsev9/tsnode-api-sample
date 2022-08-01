@@ -4,7 +4,7 @@
   "description": "TSNode RESTful API written alongside a YT tutorial",
   "main": "src/app.ts",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/app.ts"
+    "dev": "export OPENSSL_CONF=/dev/null; ts-node-dev --respawn --transpile-only src/app.ts"
   },
   "repository": {
     "type": "git",
